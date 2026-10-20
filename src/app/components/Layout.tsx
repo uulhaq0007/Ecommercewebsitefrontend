@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router';
+import { Link, Outlet } from 'react-router';
 import { Header } from './Header';
 
 export const Layout = () => {
@@ -24,11 +24,11 @@ export const Layout = () => {
                 Shop
               </h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="/products" className="hover:text-accent">All Products</a></li>
-                <li><a href="/products?category=Electronics" className="hover:text-accent">Electronics</a></li>
-                <li><a href="/products?category=Clothing" className="hover:text-accent">Clothing</a></li>
-                <li><a href="/products?category=Shoes" className="hover:text-accent">Shoes</a></li>
-                <li><a href="/products?category=Accessories" className="hover:text-accent">Accessories</a></li>
+                <li><Link to="/products" className="hover:text-accent">All Products</Link></li>
+                <li><Link to="/products?category=Electronics" className="hover:text-accent">Electronics</Link></li>
+                <li><Link to="/products?category=Clothing" className="hover:text-accent">Clothing</Link></li>
+                <li><Link to="/products?category=Shoes" className="hover:text-accent">Shoes</Link></li>
+                <li><Link to="/products?category=Accessories" className="hover:text-accent">Accessories</Link></li>
               </ul>
             </div>
             <div>
